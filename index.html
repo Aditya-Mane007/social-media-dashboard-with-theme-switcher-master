@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | [Social Media Dashboard]</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="title" style="line-height: 1.5">
+					<h1 class="title-text">Social Media Dashboard</h1>
+					<p class="total-followers">Total Followers : 23,004</p>
+				</div>
+				<div class="mode-change">
+					<div class="mode">Light Mode</div>
+					<div class="switch">
+						<input type="checkbox" id="change" />
+					</div>
+				</div>
+			</div>
+			<div class="socials">
+				<div
+					class="social facbook"
+					style="border-top: 5px solid var(--Facebook)"
+				>
+					<div class="social-icon">
+						<img src="./images/icon-facebook.svg" alt="icon-facebook" />
+						<span class="social-icon-id">@nathanf</span>
+					</div>
+					<div class="social-followers">
+						<h1>1987</h1>
+						<p>FOLLOWERS</p>
+					</div>
+					<div class="social-update">
+						<p>
+							<img src="./images/icon-up.svg" alt="up" /><span>12 Today</span>
+						</p>
+					</div>
+				</div>
+				<div
+					class="social twitter"
+					style="border-top: 5px solid var(--Twitter)"
+				>
+					<div class="social-icon">
+						<img src="./images/icon-twitter.svg" alt="icon-twitter" />
+						<span class="social-icon-id">@nathanf</span>
+					</div>
+					<div class="social-followers">
+						<h1>1044</h1>
+						<p>FOLLOWERS</p>
+					</div>
+					<div class="social-update">
+						<p>
+							<img src="./images/icon-up.svg" alt="up" /><span>99 Today</span>
+						</p>
+					</div>
+				</div>
+				<div class="social instagram">
+					<div class="social-icon">
+						<img src="./images/icon-instagram.svg" alt="icon-instagram" />
+						<span class="social-icon-id">@nathanf</span>
+					</div>
+					<div class="social-followers">
+						<h1>11k</h1>
+						<p>FOLLOWERS</p>
+					</div>
+					<div class="social-update">
+						<p>
+							<img src="./images/icon-up.svg" alt="up" /><span>1099 Today</span>
+						</p>
+					</div>
+				</div>
+				<div
+					class="social youtube"
+					style="border-top: 5px solid var(--YouTube)"
+				>
+					<div class="social-icon">
+						<img src="./images/icon-youtube.svg" alt="icon-youtube" />
+						<span class="social-icon-id">@nathanf</span>
+					</div>
+					<div class="social-followers">
+						<h1>8329</h1>
+						<p>FOLLOWERS</p>
+					</div>
+					<div class="social-update">
+						<p>
+							<img src="./images/icon-down.svg" alt="up" /><span
+								>144 Today</span
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+			<h1
+				class="socials-update-heading"
+				style="font-weight: 700; font-size: 24px; margin: 1rem 1rem"
+			>
+				Overview - Today
+			</h1>
+			<div class="socials-updates">
+				<div class="social-update">
+					<div class="box1">
+						<div class="page-views">
+							<div class="page-view-text">Page Views</div>
+							<div class="page-view-updateNumber updateNumber">87</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-facebook.svg" alt="facbook" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="up"
+									><img src="./images/icon-up.svg" alt="up" />3%</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="likes">
+							<div class="like-text">Likes</div>
+							<div class="like-updateNumber updateNumber">52</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-facebook.svg" alt="facbook" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="down"
+									><img src="./images/icon-down.svg" alt="down" />2%</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="social-update">
+					<div class="box2">
+						<div class="likes">
+							<div class="like-text">Likes</div>
+							<div class="like-updateNumber updateNumber">5462</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-instagram.svg" alt="instagram" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="up"
+									><img src="./images/icon-up.svg" alt="up" />2257%</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="page-views">
+							<div class="page-view-text">Profile Views</div>
+							<div class="page-view-updateNumber updateNumber">52K</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-instagram.svg" alt="instagram" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="up"
+									><img src="./images/icon-up.svg" alt="up" />1375%</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="social-update">
+					<div class="box1">
+						<div class="page-views">
+							<div class="page-view-text">Retweets</div>
+							<div class="page-view-updateNumber updateNumber">117</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-twitter.svg" alt="twitter" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="up"
+									><img src="./images/icon-up.svg" alt="up" />303%</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="likes">
+							<div class="like-text">Likes</div>
+							<div class="like-updateNumber updateNumber">507</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-twitter.svg" alt="twitter" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="up"
+									><img src="./images/icon-up.svg" alt="up" />553%</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="social-update">
+					<div class="box2">
+						<div class="likes">
+							<div class="like-text">Likes</div>
+							<div class="like-updateNumber updateNumber">107</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-YouTube.svg" alt="YouTube" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="down"
+									><img src="./images/icon-down.svg" alt="down" />19%</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="page-views">
+							<div class="page-view-text">Total Views</div>
+							<div class="page-view-updateNumber updateNumber">1407</div>
+						</div>
+						<div class="soical-id-update">
+							<div class="social-id-icon">
+								<img src="./images/icon-YouTube.svg" alt="YouTube" />
+							</div>
+							<div class="social-id-updateNumber">
+								<span class="down"
+									><img src="./images/icon-down.svg" alt="down" />12%</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="attribution">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Aditya Mane</a>.
+				</div>
+			</footer>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

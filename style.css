@@ -1,0 +1,302 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root {
+	/* ### Primary */
+	--LimeGreen: hsl(163, 72%, 41%);
+	--BrightRed: hsl(356, 69%, 56%);
+	--Facebook: hsl(208, 92%, 53%);
+	--Twitter: hsl(203, 89%, 53%);
+	--Instagram: linear-gradient(
+		45deg,
+		rgba(253, 196, 104, 1) 40%,
+		rgba(223, 73, 150, 1) 84%
+	);
+	--YouTube: hsl(348, 97%, 39%);
+
+	/* #### Dark Theme */
+	--Toggle: linear-gradient(
+		90deg,
+		rgba(55, 143, 230, 1) 8%,
+		rgba(62, 218, 130, 1) 84%
+	);
+
+	/* #### Light Theme */
+	--LightToggle: hsl(230, 22%, 74%);
+	/* ### Neutral */
+
+	/* #### Dark Theme */
+	--VeryDarkBlue: hsl(230, 17%, 14%); /*(BG) */
+	--VeryDarkBlue: hsl(232, 19%, 15%); /*(Top BG Pattern)*/
+	--DarkDesaturatedBlue: hsl(228, 28%, 20%); /* (Card BG) */
+	--DesaturatedBlue: hsl(228, 34%, 66%); /* (Text)*/
+	--White: hsl(0, 0%, 100%); /* (Text)*/
+	/* #### Light Theme */
+	--White: hsl(0, 0%, 100%); /*(BG)*/
+	--VeryPaleBlue: hsl(225, 100%, 98%); /*(Top BG Pattern)*/
+	--LightGrayishBlue: hsl(227, 47%, 96%); /*(Card BG)*/
+	--DarkGrayishBlue: hsl(228, 12%, 44%); /*(Text)*/
+	--VeryDarkBlue: hsl(230, 17%, 14%); /*(Text)*/
+}
+body {
+	font-family: 'Inter', sans-serif;
+}
+.container {
+	min-width: 90vw;
+	min-height: 100vh;
+	margin: auto;
+}
+.navbar {
+	width: 100%;
+	height: 7rem;
+	width: 100%;
+	height: 15rem;
+	background-color: var(--VeryPaleBlue);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 2rem 1rem;
+	margin: auto;
+	/* background-color: aqua; */
+}
+.title {
+	border-bottom: 1px solid var(--VeryDarkBlue);
+	padding: 0.5rem 0rem;
+}
+.title-text {
+	font-size: 24px;
+	font-weight: 700;
+}
+.total-followers {
+	font-weight: 400;
+}
+.mode-change {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0rem;
+}
+.mode {
+	font-weight: 700;
+}
+.switch {
+	position: relative;
+
+}
+input[type='checkbox'] {
+	width: 74px;
+	height: 34px;
+	-webkit-appearance: none;
+	border-radius: 25px;
+	background-color: var(--LightToggle);
+	transition: 0.5s;
+	outline: none;
+	cursor: pointer;
+
+}
+input[type='checkbox']::before {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 25px;
+	top: 12%;
+	left: 60%;
+	border-radius: 50%;
+	transition: 0.5s;
+	background-color: var(--White);
+}
+input:checked[type='checkbox'] {
+	background: var(--Toggle);
+}
+input:checked[type='checkbox']::before {
+	background: var(--DarkGrayishBlue);
+	left: 10%;
+}
+.socials {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	margin-top: -7rem;
+}
+.social {
+	width: 100%;
+	height: 12.5rem;
+	border-radius: 5px;
+	margin: 2rem 0rem;
+	background-color: var(--LightGrayishBlue);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1rem;
+	/* align-items: center; */
+	cursor: pointer;
+
+}
+.social-icon {
+	width: 100%;
+	height: 25px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* background-color: aqua; */
+}
+.social-icon-id {
+	margin-left: 0.5rem;
+	font-weight: 700;
+	font-size: 15px;
+}
+/*  */
+.social-followers {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+	/* background-color: aqua; */
+}
+.social-followers p {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	color: var(--DarkGrayishBlue);
+}
+/*  */
+.social-update {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	/* background-color: aqua; */
+}
+.instagram {
+	border-top: 5px solid transparent;
+	border-image: linear-gradient(
+		45deg,
+		rgba(253, 196, 104, 1) 40%,
+		rgba(223, 73, 150, 1) 84%
+	);
+	border-image-slice: 1;
+}
+
+.socials-updates {
+	width: 100%;
+	min-height: 400px;
+	padding: 1rem;
+}
+.socials-updates .social-update {
+	width: 100%;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	cursor: pointer;
+
+}
+.socials-updates .box1 {
+	width: 100%;
+	height: 7.5rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly	;
+	background-color: var(--LightGrayishBlue);
+	border-radius: 10px;
+}
+.socials-updates .box2 {
+	width: 100%;
+	height: 7.5rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly	;
+	background-color: var(--LightGrayishBlue);
+	border-radius: 10px;
+}
+.socials-updates .page-views {
+	width: 100%;
+	height: 100%;
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.socials-updates .likes {
+	width: 100%;
+	height: 100%;
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.socials-updates .soical-id-update {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	border-radius: 10px;
+}
+.socials-updates .updateNumber {
+	font-size: 32px;
+	font-weight: 700;
+}
+.socials-updates .up {
+	color: var(--LimeGreen);
+}
+.socials-updates .down {
+	color: var(--BrightRed);
+}
+.socials-updates .social-update span {
+	width: 100%;
+}
+@media (min-width: 38.75rem) {
+	.socials {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 2rem;
+	}
+	.socials {
+		width: 100%;
+		height: 100%;
+	}
+	.socials-updates {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		/* background-color: aqua; */
+	}
+	.socials-updates .social-update {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+		gap: 2rem;
+	}
+}
